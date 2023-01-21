@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-primary:#E76F51;
+    --font-primary:'Poppins', sans-serif;
+    --secondary_fonts:'Inter', sans-serif;
+}
+body{
+    font-family: var(--font-primary);
+}
+a{
+    display: inline-block;
+}
+h1{
+    font-size: 60px;
+}
+.login_btn{
+    padding: 15px 52px;
+}
+.navbar-brand{
+    font-size: 35px;
+}
+.purchase_btn{
+    padding: 17PX 32px;
+    font-size: 20px;
+}
+.carousel{
+    background: rgba(231, 111, 81, 0.10);
+}
+.jm-control-btn{
+    background: #000;
+}
+.jm-image-filter{
+    filter: grayscale(1);
+}
+/* ==============feature area========== */
+#feature_section,#client_section{
+    margin: 130px 0;
+}
+#feature_section p{
+    font-size: 14px;
+    color: var(--color-primary);
+    position: relative;
+}
+#feature_section p::after{
+    content: "";
+    width: 58px;
+    height: 2px;
+    background: #E76F51;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.jm-outline-btn{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.jm-review-container{
+    width: fit-content;
+}
+.jm-review-color{
+    color: #E77C40;
+    margin: 0 3px;
+}
+footer{
+    background: #0B0D17;
+    margin-top: 130px;
+    color: #D9DBE1;
+}
+@media screen and (max-width:768px) {
+    h1{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:576px) {
+    h1{
+        font-size: 35px;
+    }
+}
